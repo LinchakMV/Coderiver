@@ -200,7 +200,7 @@ a{
   }
 }
 
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1205px) {
   .main-menu{
     margin-right:0;
     ul{
@@ -208,7 +208,7 @@ a{
         padding-right:5px;
         padding-left:0;
         a{
-          font-size: 1em;
+          font-size: 0.85em;
         }
       }
     }
@@ -229,7 +229,11 @@ a{
     margin-right: 20px;
   }
 }
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1005px) {
+    .main-menu ul li a{
+      font-size: 0.8em;
+        
+  }
 		.choice{      
       div{
         margin-bottom: 10px;

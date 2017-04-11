@@ -162,14 +162,14 @@ a {
       .main-menu ul li a {
         font-size: 1.2em; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1205px) {
   .main-menu {
     margin-right: 0; }
     .main-menu ul li {
       padding-right: 5px;
       padding-left: 0; }
       .main-menu ul li a {
-        font-size: 1em; }
+        font-size: 0.85em; }
   .expect {
     margin-left: 5px; }
   .choice {
@@ -181,6 +181,8 @@ a {
   .click-b {
     margin-right: 20px; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1005px) {
+  .main-menu ul li a {
+    font-size: 0.8em; }
   .choice div {
     margin-bottom: 10px; } }
