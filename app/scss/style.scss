@@ -1,0 +1,238 @@
+$first-color: #ff5722;
+$second-color: #141a1d;
+$third-color: #f2efe9;
+$h-color: #039ad7;
+$t-color: #808080;
+
+body{ 
+  max-width:1920px;
+  margin:0px;
+  padding:0px;
+}
+header{
+  margin: 0;
+  padding: 0;
+  height:105px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:flex-start;
+  align-content:stretch; 
+  background-color: $second-color; 
+  font-family: 'Lato', sans-serif;
+  border-bottom: 1px solid $second-color;
+}
+
+a{
+  text-decoration: none;
+}
+.left-h{
+  display:flex;
+  flex-direction: row;
+}
+.strongest{
+  padding:22px 0 0 12px; 
+}
+.main-menu{
+  padding-top:30px;
+  margin-right:73px;
+    ul{      
+      list-style: none;
+      text-decoration: none;
+      li{
+        display: inline;
+        padding-right:18px;
+        padding-left:18px;
+          a{
+            color:#f2efe9;
+            font-size:1.4em;
+            color: $t-color;
+          }
+          a:hover{
+            color: $third-color;
+          }        
+        }
+    }
+}
+.main-menu li ul{
+  display:none;
+}
+.main-menu li:hover ul{
+  display:block;
+  position:absolute;
+  background-color: $second-color;
+  li{
+    display: block;    
+    z-index:1;
+    margin-left: -20px;
+    margin-top: 10px;
+    padding:15px 10px;
+    a{
+      color: $third-color;
+    }
+    a:hover{
+      color: $t-color;
+    }
+  }
+}
+
+
+/*CONTENT*/
+.main-content{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items:stretch;
+  font-family: 'Lato', sans-serif;
+}
+
+.button-click{
+  height:198px;
+  background-color:$first-color;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .product{
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.9;
+
+  }
+  .click-b{
+    margin-left: 160px;
+    button{
+      height: 78px;
+      width: 261px;
+      background: transparent;
+      border:2px solid $third-color;
+      color: #fff;
+      font-size: 1.65em;
+    }
+    button:hover{
+      border:4px solid $second-color;
+      color: $second-color;
+    }
+  }
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:68px 0px 180px 0px;
+}
+.expect{
+  margin-left: -170px;
+  h1{ 
+    font-size: 4.4em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-bottom:0px;
+    span{
+      font-weight: 900;
+    }
+  }
+  p{
+    width:980px;
+    color: $t-color;
+    font-size: 1.4em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    word-spacing: 1px;
+  }
+}
+.choice{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items: flex-start;
+  margin-top: 60px;
+  margin-left: 40px;
+  font-family: 'Open Sans', sans-serif;
+  div{
+    margin-right: 28px;
+    width:273px;
+    h3{
+      color: $h-color;
+      margin:40px 0 0px 0;
+      font-weight: 800;
+      font-size: 1.9em;
+    }
+    h5{
+      margin:1px 0;
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+    p{
+      margin:5px 0 32px 0;
+      font-weight: 300;
+      font-size: 0.9em;
+    }
+    button{
+      height: 49px;
+      width: 147px;
+      color: #fff;
+      background: $first-color;
+      border: none;
+    }
+    button:hover{
+      border:4px solid $second-color;
+      color: $second-color;
+    }
+  }
+}
+
+@media only screen and (max-width : 1599px) {
+  .main-menu{
+    margin-right:0;
+    ul{
+      li{
+        padding-right:10px;
+        padding-left:0;
+        a{
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  .main-menu{
+    margin-right:0;
+    ul{
+      li{
+        padding-right:5px;
+        padding-left:0;
+        a{
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  .expect{
+    margin-left:5px;
+  }
+  .choice{
+    flex-wrap: wrap;
+    div{
+      margin-right:0;
+    }
+  }
+  .product{
+    margin-left:20px;
+  }
+  .click-b{
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width : 992px) {
+		.choice{      
+      div{
+        margin-bottom: 10px;
+      }
+    }
+}
