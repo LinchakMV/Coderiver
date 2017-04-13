@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $(".slider").each(function() { // обробляємо кожний слайд
-        var repeats = 3, // кількість повторювань автоматичного прокручування
-        interval = 3, // інтервал в секундах
-        repeat = true, // чи треба автоматично прокручувати (true/false)
+    $(".slider").each(function() { 
+        var repeats = 3,
+        interval = 3,
+        repeat = true,
         slider = $(this),
         repeatCount = 0,
         elements = $(slider).find("li").length;
@@ -10,12 +10,11 @@ $(document).ready(function() {
         $(slider)
         .append("<div class='nav'></div>")
         .find("li").each(function() {
-        $(slider).find(".nav").append("<span data-slide='"+$(this).index()+"'></span>"); // добавляем блок навигации
+        $(slider).find(".nav").append("<span data-slide='"+$(this).index()+"'></span>"); 
         $(this).attr("data-slide", $(this).index());
         })
         .end()
-        .find("span").first().addClass("on"); // робимо активним перший елемент
-
+        .find("span").first().addClass("on");
         // add timeout
 
         if (repeat) {
@@ -45,10 +44,10 @@ $(document).ready(function() {
     });
  });
 
-function sliderJS(index, slider) { // slider function
- var ul = $(slider).find("ul"), // знаходимо блок
+function sliderJS(index, slider) { 
+ var ul = $(slider).find("ul"), 
  bl = $(slider).find("li[data-slide=" + index + "]"),
- step = $(bl).width(); // ширина об'єкту
+ step = $(bl).width(); 
 
  $(slider)
  .find("span").removeClass("on")
@@ -57,13 +56,5 @@ function sliderJS(index, slider) { // slider function
 
  $(ul).animate({
  marginLeft: "-" + step * index
- }, 500); // 500 - швидкість перемотування
+ }, 500); 
 }
-
-// $(document).on("click", ".slider .nav span", function(e) { // slider click navigate
-//  e.preventDefault();
-//  var slider = $(this).closest(".slider"),
-//  index = $(this).data("slide");
-
-//  sliderJS(index, slider); // слайдим
-// });
