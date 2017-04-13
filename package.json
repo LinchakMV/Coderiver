@@ -1,16 +1,11 @@
 {
-<<<<<<< HEAD
-  "name": "project",
-=======
   "name": "atlant",
->>>>>>> 37808efe49d0ab0cd7a3375340280077339769c0
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-<<<<<<< HEAD
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -21,17 +16,3 @@
     "gulp-sass": "^3.1.0"
   }
 }
-=======
-  "repository": {
-    "type": "git",
-    "url": "linchakmv"
-  },
-  "author": "LinchakMV",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
-  }
-}
->>>>>>> 37808efe49d0ab0cd7a3375340280077339769c0

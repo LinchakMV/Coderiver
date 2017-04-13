@@ -87,6 +87,7 @@ a{
 }
 
 .button-click{
+  margin-top: -4px;
   height:198px;
   background-color:$first-color;
   display:flex;
@@ -184,7 +185,60 @@ a{
     }
   }
 }
-
+/*Slider*/
+.slider {
+ z-index: 9;
+ overflow: hidden;
+ position: relative;
+ }
+ .slider ul,
+ .slider li {
+ padding: 0;
+ margin: 0;
+ list-style-type: none;
+ }
+ .slider ul {
+ width: 9999px; 
+ }
+ .slider ul li {
+ list-style-type: none;
+ float: left;
+ }
+ .slider .nav {
+ position: absolute;
+ left: 155px;
+ bottom: 50px; 
+ }
+ .slider .nav span {
+ opacity: 0;
+ background: #fff;
+ margin: 0 8px 0 0;
+ width: 16px;
+ height: 16px;
+ border-radius: 8px;
+ cursor: pointer;
+ overflow: hidden;
+ display: block;
+ float: left;
+ box-shadow: 0 1px 2px #000;
+ }
+ .slider .nav span.on {
+ background: #2e9419;
+ }
+ .navigation-slide{
+   position:absolute;
+   padding: 10px;
+   bottom: 45px;
+   left:340px;
+   font-size: 2em;
+ }
+ .navigation-slide a{
+   margin-left:45px;
+   color: #fff;
+ }
+ .navigation-slide a:hover{
+   color: #000;
+ }
 @media only screen and (max-width : 1599px) {
   .main-menu{
     margin-right:0;
@@ -198,9 +252,22 @@ a{
       }
     }
   }
+  .slider ul li img{
+    width: 1599px;
+  }
+  .navigation-slide{
+   padding: 10px;
+   bottom: 29px;
+   left:290px;
+   font-size: 2em;
+ }
+ .navigation-slide a{
+   margin-left:30px;
+ } 
 }
 
-@media only screen and (max-width : 1205px) {
+
+@media only screen and (max-width : 1200px) {
   .main-menu{
     margin-right:0;
     ul{
@@ -228,8 +295,20 @@ a{
   .click-b{
     margin-right: 20px;
   }
+  .slider ul li img{
+    width: 1200px;
+  }
+  .navigation-slide{
+   padding: 10px;
+   bottom: 20px;
+   left:220px;
+   font-size: 1.5em;
+ }
+ .navigation-slide a{
+   margin-left:20px;
+ }
 }
-@media only screen and (max-width : 1005px) {
+@media only screen and (max-width : 992px) {
     .main-menu ul li a{
       font-size: 0.8em;
         
@@ -239,4 +318,19 @@ a{
         margin-bottom: 10px;
       }
     }
+    .slider ul li img{
+      width: 992px;
+  }
+  .navigation-slide{
+   padding: 10px;
+   bottom: 18px;
+   left:167px;
+   font-size: 1em;
+ }
+ .navigation-slide a{
+   margin-left:26px;
+ }
 }
+
+
+ 

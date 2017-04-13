@@ -5,7 +5,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:300,400,700,800" rel="stylesheet">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>    
 </head>
 <body>
    <header class="header">
@@ -38,9 +39,17 @@
         </div>        
    </header>
    <div class="main-content">
-       <!--<div class="slider">-->
-           <img src="./img/Layer79.jpg" alt="room">
-       <!--</div>-->
+        <div class="slider">
+            <ul>
+                <li><img src="./img/slide1.jpg" alt="room"></li>
+                <li><img src="./img/slide2.jpg" alt="bathroom"></li>
+                <li><img src="./img/slide3.jpg" alt="bathroom"></li>        
+            </ul>   
+            <div class="navigation-slide">
+                <a href="#" id="prev"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+                <a href="#" id="next"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+            </div>   
+        </div>
        <div class="button-click">
            <div class="product">
                <p>how do you create a product that</br> looks like natural stone?</p>
@@ -86,5 +95,6 @@
            </div>
        </div>
    </div>
+   <script src="https://use.fontawesome.com/e9bd483bc0.js"></script>
 </body>
 </html>
